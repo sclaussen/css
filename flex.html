@@ -1,0 +1,142 @@
+<html>
+  <header>
+    <style>
+      .example {
+          border-style: solid;
+          border=1px;
+          margin: 20px;
+      }
+      p {
+          margin-top: 0;
+      }
+      .blue {
+          background-color: lightblue;
+      }
+      .pink {
+          background-color: lightpink;
+      }
+      .yellow {
+          background-color: lightyellow;
+      }
+      .green {
+          background-color: lightgreen;
+      }
+    </style>
+  </header>
+  <body>
+
+    <div class="example">
+      <p>display: flex; flex-direction: row</p>
+      <div style="display: flex; flex-direction: row">
+        <div class="blue">blue</div>
+        <div class="pink">pink</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <p>display: flex; flex-direction: column</p>
+      <div style="display: flex; flex-direction: column">
+        <div class="blue">blue</div>
+        <div class="pink">pink</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <p>display: flex; flex-direction: row</p>
+      <div style="display: flex; flex-direction: row">
+        <div class="blue">div1 horizontal flex</div>
+        <div class="pink">pink<p>vertical flex</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <p>display: flex; flex-direction: row (div1: width: 100px) (div2: flex: 1)</p>
+      <div style="display: flex; flex-direction: row">
+        <div class="blue" style="width: 100px;">100px</div>
+        <div class="pink" style="flex: 1;">flex: 1</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <p>display: flex; flex-direction: row (div1: width: 100px) (div2: flex: 1) (div3: flex: 2)</p>
+      <div style="display: flex; flex-direction: row">
+        <div class="blue" style="width: 100px;">100px</div>
+        <div class="pink" style="flex: 1">flex: 1</div>
+        <div class="blue" style="flex: 2">flex2</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <p>display: flex; flex-direction: row (div2: flex: 1) (div1: width: 100px) (div3: flex: 2)</p>
+      <div style="display: flex; flex-direction: row">
+        <div class="pink" style="flex: 1">flex: 1</div>
+        <div class="blue" style="width: 100px;">100px</div>
+        <div class="blue" style="flex: 2">flex2</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <p>display: flex; flex-direction: row; justify-content: end (div1: width: 100) (div2: width: 100) (div3: width: 100)</p>
+      <div style="display: flex; flex-direction: row; justify-content: end">
+        <div class="pink" style="width: 100">100px</div>
+        <div class="blue" style="width: 100">100px</div>
+        <div class="pink" style="width: 100">100px</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <p>display: flex; flex-direction: row; justify-content: center (div1: width: 100) (div2: width: 100) (div3: width: 100)</p>
+      <div style="display: flex; flex-direction: row; justify-content: center">
+        <div class="pink" style="width: 100">100px</div>
+        <div class="blue" style="width: 100">100px</div>
+        <div class="pink" style="width: 100">100px</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <p>display: flex; flex-direction: row; justify-content: space-between (div1: width: 100) (div2: width: 100) (div3: width: 100)</p>
+      <div style="display: flex; flex-direction: row; justify-content: space-between">
+        <div class="pink" style="width: 100">100px</div>
+        <div class="blue" style="width: 100">100px</div>
+        <div class="pink" style="width: 100">100px</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <p>height: 100px; display: flex; flex-direction: row; justify-content: space-between (div1: width: 100) (div2: width: 100) (div3: width: 100)</p>
+      <div style="height: 100px; display: flex; flex-direction: row; justify-content: space-between">
+        <div class="pink" style="width: 100">100px</div>
+        <div class="blue" style="width: 100">100px</div>
+        <div class="pink" style="width: 100">100px</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <p>height: 100px; display: flex; flex-direction: row; justify-content: space-between; align-items: start (div1: width: 100) (div2: width: 100) (div3: width: 100)</p>
+      <div style="height: 100px; display: flex; flex-direction: row; justify-content: space-between; align-items: start">
+        <div class="pink" style="width: 100">100px</div>
+        <div class="blue" style="width: 100">100px</div>
+        <div class="pink" style="width: 100">100px</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <p>height: 100px; display: flex; flex-direction: row; justify-content: space-between; align-items: center (div1: width: 100) (div2: width: 100) (div3: width: 100)</p>
+      <div style="height: 100px; display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+        <div class="pink" style="width: 100">100px</div>
+        <div class="blue" style="width: 100">100px</div>
+        <div class="pink" style="width: 100">100px</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <p>height: 100px; display: flex; flex-direction: row; justify-content: space-between; align-items: end (div1: width: 100) (div2: width: 100) (div3: width: 100)</p>
+      <div style="height: 100px; display: flex; flex-direction: row; justify-content: space-between; align-items: end">
+        <div class="pink" style="width: 100">100px</div>
+        <div class="blue" style="width: 100">100px</div>
+        <div class="pink" style="width: 100">100px</div>
+      </div>
+    </div>
+
+  </body>
+</html>

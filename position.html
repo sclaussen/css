@@ -1,0 +1,79 @@
+<html>
+  <header>
+    <style>
+      .example {
+          border-style: solid;
+          border=1px;
+          margin: 20px;
+      }
+      p {
+          margin-top: 0;
+      }
+      .blue {
+          background-color: lightblue;
+      }
+      .pink {
+          background-color: lightpink;
+      }
+      .yellow {
+          background-color: lightyellow;
+      }
+      .red {
+          background-color: red;
+      }
+      .black {
+          color: black;
+      }
+      .green {
+          background-color: lightgreen;
+      }
+      body {
+          height: 3000px;
+          padding-top: 60px;
+          padding-left: 250px;
+      }
+      .header {
+          height: 50px;
+          position: fixed;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          border-bottom-style: solid;
+          border-bottom-width: 1px;
+          border-bottom-color: grey;
+          z-index: 100;
+      }
+      .sidebar {
+          position: fixed;
+          left: 0px;
+          top: 50px;
+          bottom: 0px;
+          width: 200px;
+          border-bottom-style: solid;
+          border-bottom-width: 1px;
+          border-bottom-color: grey;
+          z-index: 100;
+      }
+    </style>
+  </header>
+
+  <body>
+
+    <div class="example">
+      <div class="green header">Top Navigation</div>
+      <div class="blue sidebar">
+        <div class="red" style="position: absolute; top: 10px; left: 10px">absolute</div>
+        <div class="black" style="position: absolute; top: 5px; right: 5px">X</div>
+      </div>
+
+      <div class="blue" style="height: 200px; width: 200px; position: relative">
+        <div class="red" style="position: absolute; top: 10px; left: 10px">absolute</div>
+        <div class="black" style="position: absolute; top: 5px; right: 5px">X</div>
+        <div class="black" style="position: absolute; bottom: 5px; right: 5px">05:00</div>
+      </div>
+
+      <div class="pink" style="height: 200px; width: 200px; position: static">area2</div>
+    </div>
+
+  </body>
+</html>

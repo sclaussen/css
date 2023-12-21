@@ -1,0 +1,86 @@
+<html>
+  <header>
+    <style>
+      .example {
+          border-style: solid;
+          border=1px;
+          margin: 20px;
+      }
+      .blue {
+          background-color: lightblue;
+      }
+      .pink {
+          background-color: lightpink;
+      }
+      .yellow {
+          background-color: lightyellow;
+      }
+      .green {
+          background-color: lightgreen;
+      }
+    </style>
+  </header>
+
+    <body>
+      <p style="margin: 20px;">Grid and Flow Layouts</p>
+
+      <div class="example">
+        <p style="margin:top: 30px">display: grid; grid-template-columns: 100px 100px;</p>
+        <div style="display: grid; grid-template-columns: 100px 100px;">
+            <div class="blue">100px</div>
+            <div class="pink">100px</div>
+        </div>
+      </div>
+
+      <div class="example">
+        <p style="margin:top: 30px">display: grid; grid-template-columns: 100px 100px; column-gap: 20px; row-gap: 20px; border=1px (with 4 divs)</p>
+        <div style="display: grid; grid-template-columns: 100px 100px; column-gap: 20px; row-gap: 20px; border=1px;">
+            <div class="blue">100px</div>
+            <div class="pink">100px</div>
+            <div class="blue">100px</div>
+            <div class="pink">100px</div>
+        </div>
+      </div>
+
+      <div class="example">
+        <p style="margin:top: 30px">display: grid; grid-template-columns: 100px 50px 100px (with 4 divs)</p>
+        <div style="display: grid; grid-template-columns: 100px 50px 100px">
+            <div class="blue">100px</div>
+            <div class="pink">50px</div>
+            <div class="yellow">100px</div>
+            <div class="green">4th of 3 cols wrap</div>
+        </div>
+      </div>
+
+      <div class="example">
+        <p style="margin:top: 30px">display: grid; grid-template-columns: 100px 100px 1fr</p>
+        <div style="display: grid; grid-template-columns: 100px 100px 1fr">
+            <div class="blue">100px</div>
+            <div class="pink">100px</div>
+            <div class="green">1fr</div>
+        </div>
+      </div>
+
+      <div class="example">
+        <p style="margin:top: 30px">display: grid; grid-template-columns: 100px 100px 1fr 1fr</p>
+        <div style="display: grid; grid-template-columns: 100px 100px 1fr 1fr">
+            <div class="blue">100px</div>
+            <div class="pink">100px</div>
+            <div class="blue">1fr</div>
+            <div class="pink">1fr</div>
+        </div>
+      </div>
+
+      <div class="example">
+        <p style="margin:top: 30px">display: grid; grid-template-columns: 100px 100px 2fr 1fr 1fr</p>
+        <div style="display: grid; grid-template-columns: 100px 100px 2fr 1fr 1fr">
+            <div class="blue">100px</div>
+            <div class="pink">100px</div>
+            <div class="blue">2fr</div>
+            <div class="pink">1fr</div>
+            <div class="blue">1fr</div>
+        </div>
+      </div>
+
+    </body>
+</html>

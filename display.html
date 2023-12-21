@@ -1,0 +1,57 @@
+<html>
+  <header>
+    <style>
+      .example {
+          border-style: solid;
+          border=1px;
+          margin: 20px;
+      }
+      .myimg {
+          width: 200px;
+          border-style: solid;
+          border-width: 2px;
+          border-color: red;
+      }
+      .myp {
+          border-style: solid;
+          border-width: 2px;
+          border-color: red;
+      }
+    </style>
+  </header>
+  <body>
+
+    <div class="example">
+      <p>img/img (inline block) and p/p (block)</p>
+      <img class="myimg" src="img/yosemite.jpeg"/>
+      <img class="myimg" src="img/yosemite.jpeg"/>
+      <p class="myp">This is a long sentence to demonstrate how a block element works.</p>
+      <p class="myp">This is a long sentence to demonstrate how a block element works.</p>
+    </div>
+
+    <div class="example">
+      <p>img/img (inline block) and p/p width: 200px (block)</p>
+      <img class="myimg" src="img/yosemite.jpeg"/>
+      <img class="myimg" src="img/yosemite.jpeg"/>
+      <p class="myp" style="width: 200px">This is a long sentence to demonstrate how a block element works.</p>
+      <p class="myp" style="width: 200px">This is a long sentence to demonstrate how a block element works.</p>
+    </div>
+
+    <div class="example">
+      <p>display: inline-block for all: img/img and p/p width: 200px</p>
+      <img class="myimg" style="display: inline-block" src="img/yosemite.jpeg"/>
+      <img class="myimg" style="display: inline-block" src="img/yosemite.jpeg"/>
+      <p class="myp" style="display: inline-block; width: 200px">This is a long sentence to demonstrate how a block element works.</p>
+      <p class="myp" style="display: inline-block; width: 200px">This is a long sentence to demonstrate how a block element works.</p>
+    </div>
+
+    <div class="example">
+      <p>display: block for all: img/img and p/p width: 200px</p>
+      <img class="myimg" style="display: block" src="img/yosemite.jpeg"/>
+      <img class="myimg" style="display: block" src="img/yosemite.jpeg"/>
+      <p class="myp" style="display: block; width: 200px">This is a long sentence to demonstrate how a block element works.</p>
+      <p class="myp" style="display: block; width: 200px">This is a long sentence to demonstrate how a block element works.</p>
+    </div>
+
+  </body>
+</html>

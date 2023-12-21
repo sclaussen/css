@@ -1,0 +1,48 @@
+<html>
+  <header>
+    <style>
+      img {
+          border-style: solid;
+          border-width: 2px;
+          border-color: red;
+      }
+      .example {
+          border-style: solid;
+          border=1px;
+          margin: 20px;
+      }
+    </style>
+  </header>
+  <body>
+    <div class="example">
+      <p>width: 300px (maintains ratio)</p>
+      <img style="width: 300px" src="img/yosemite.jpeg"/>
+    </div>
+
+    <div class="example">
+      <p>width: 300px; height: 300px (loses ratio)</p>
+      <img style="width: 300px; height: 300px" src="img/yosemite.jpeg"/>
+    </div>
+
+    <div class="example">
+      <p>width: 300px; height: 300px; object-fit: cover (covers the 300x300 space with part of the image cropping where required)</p>
+      <img style="width: 300px; height: 300px; object-fit: cover" src="img/yosemite.jpeg"/>
+    </div>
+
+    <div class="example">
+      <p>width: 300px; height: 300px; object-fit: cover; object-position: right (covers the 300x300 space with part of the image cropping where required left side of image)</p>
+      <img style="width: 300px; height: 300px; object-fit: cover; object-position: right" src="img/yosemite.jpeg"/>
+    </div>
+
+    <div class="example">
+      <p>width: 300px; height: 300px; object-fit: contain (fits image in 300x300 maintaining ratio)</p>
+      <img style="width: 300px; height: 300px; object-fit: contain" src="img/yosemite.jpeg"/>
+    </div>
+
+    <div class="example">
+      <p>width: 300px; height: 300px; object-fit: contain; object-position: top (fits image in 300x300 maintaining ratio at top)</p>
+      <img style="width: 300px; height: 300px; object-fit: contain; object-position: top" src="img/yosemite.jpeg"/>
+    </div>
+
+  </body>
+</html>
